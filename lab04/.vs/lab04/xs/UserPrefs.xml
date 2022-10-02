@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{33202A4D-A6B7-4A8D-AEA2-C1B75B3C4732}|Default">
+  <MonoDevelop.Ide.ItemProperties.lab04 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="lab04/MyMatrix.cs">
+    <Files>
+      <File FileName="lab04/Program.cs" Line="94" Column="29" />
+      <File FileName="lab04/Car.cs" Line="15" Column="34" />
+      <File FileName="lab04/MyMatrix.cs" Line="7" Column="29" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="lab04" expanded="True">
+            <Node name="lab04" expanded="True">
+              <Node name="MyMatrix.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

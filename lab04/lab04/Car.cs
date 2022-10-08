@@ -75,7 +75,42 @@ namespace lab04
                 cars_.Add(i);
             }
         }
-        public void Passage()
+        public IEnumerator<Car> GetEnumerator()
+        {
+            for (int i = 0; i < cars_.Count(); ++i)
+            {
+                yield return cars_[i];
+            }
+        }
+        public IEnumerable<Car> Reverse()
+        {
+            for (int i = cars_.Count() - 1; i >= 0; --i)
+            {
+                yield return cars_[i];
+            }
+        }
+        public IEnumerable<Car> Subset()
+        {
+            for (int i = 0; i < cars_.Count(); ++i)
+            {
+                if (cars_[i].ProductionYear < 2000)
+                {
+                    yield return cars_[i];
+                }
+            }
+        }
+        public IEnumerable<Car> Subset(int input)
+        {
+            for (int i = 0; i < cars_.Count(); ++i)
+            {
+                if (cars_[i].MaxSpeed < input)
+                {
+                    yield return cars_[i];
+                }
+            }
+        }
+
+        /*public void Passage()
         {
             Console.WriteLine("Choose the passage variant: ");
             int choise = Convert.ToInt16(Console.ReadLine());
@@ -117,10 +152,13 @@ namespace lab04
                         }
                         break;
                     }
+                
                 default:
                     break;
-            }
-        } 
+                
+            }*/
+
     }
 }
+
 

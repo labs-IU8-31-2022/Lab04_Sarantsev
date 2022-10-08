@@ -91,7 +91,26 @@ namespace lab04
             Console.WriteLine("TASK 3");
 
             CarCatalog carCatalog = new CarCatalog(cars);
-            carCatalog.Passage();
+            Console.WriteLine("simple: ");
+            foreach(var car in carCatalog)
+            {
+                Console.WriteLine(car.Name + " " + car.ProductionYear + " " + car.MaxSpeed);
+            }
+            Console.WriteLine("reverse: ");
+            foreach (var car in carCatalog.Reverse())
+            {
+                Console.WriteLine(car.Name + " " + car.ProductionYear + " " + car.MaxSpeed);
+            }
+            Console.WriteLine("subset with year: ");
+            foreach (var car in carCatalog.Subset())
+            {
+                Console.WriteLine(car.Name + " " + car.ProductionYear + " " + car.MaxSpeed);
+            }
+            Console.WriteLine("subset with max_speed: ");
+            foreach (var car in carCatalog.Subset(200))
+            {
+                Console.WriteLine(car.Name + " " + car.ProductionYear + " " + car.MaxSpeed);
+            }
         }
     }
 }
